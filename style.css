@@ -1,0 +1,130 @@
+/*This is a css file for index html */
+/*The body frame and element selectors*/
+body{
+    background-color: beige;
+    position: static;
+
+    margin-top: 2em;
+    margin-right: 2cm;
+    margin-bottom: 20mm;
+    margin-left: 2ch;
+    
+    padding-top: 5px;
+    padding-right: 2em;
+    padding-bottom: 2ex;
+    padding-left: 15mm;
+
+    border-style:groove;
+    border-color: slateblue;    
+    border-width: 3px;
+    border-radius: 2cm;
+}
+/*Box model short*/
+header{
+    display: inline-block;
+    margin: 10px 15px 10px 15px;
+    padding:10px 15px 10px 15px;
+    border: 2px groove #000000;
+}
+
+p{
+    color:#3567d2
+}
+
+li {
+    font-size: 90%;
+    position: relative;
+    color: rgb(11,111,11);
+    text-decoration: solid;
+    text-align: left;
+    display:block;
+  }
+
+img {
+    width: 50%;
+    height:50%;
+    max-width: 200px;
+    max-height: 200px;
+}
+/*Pseudo-class Selector*/
+button:hover {
+    color: hsl(10, 100, 80);
+}
+button:active{
+    background-color: rgb(0,100,100);
+}
+
+/*class selector*/
+.Flexbox{
+    display: flex;
+    margin: auto;
+    flex-wrap: nowrap;
+    flex-flow: row;
+    flex-basis: auto;
+}
+
+/*Universal selector*/
+*{
+    font-family: 'Raleway';
+}
+
+/*Attribute selector*/
+a[href = "#Agenda"]{
+    text-decoration: underline;
+}
+
+/*ID selectors*/
+#GroupMember{
+    display: grid;
+    grid: 60%;
+}
+
+#Agenda{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-auto-flow: row ;
+}
+
+
+
+/*Selector List*/
+h2, h3{
+    text-decoration: dashed;
+    color:cornflowerblue;
+}
+
+/*Combinators*/
+
+/*Descendant*/
+ul li{
+    color: darkmagenta;
+}
+/*Child*/
+ol > li{
+    color: indigo;
+}
+/*General sibling*/
+form ~ select{
+    text-decoration-thickness: 1px;
+    background-color:burlywood;
+}
+
+/*Adjacent sibling */
+h3 + ul{
+    text-decoration: wavy;
+    background-color:aquamarine;
+}
+ 
+/*Two selectors*/
+a.FavLan{
+    background-color: lightgreen;
+}
+
+/*Meida Query*/
+@media screen and (max-width: 500px){
+    body{
+        background-color: aqua;
+    }
+    
+}
